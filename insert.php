@@ -5,7 +5,7 @@ include 'conn.php';
 
 $id = $_POST['Codigo'];
 $nome = $_POST['Nome'];
-$dt_cad = $_POST['data_cadastro'];
+$Data_cad = $_POST['Data_cadastro'];
 $qtd_part= $_POST['Valor'];
 
 
@@ -14,7 +14,7 @@ $qtd_part= $_POST['Valor'];
 
 
 $sql = "INSERT into Produto(COD_PRODUTO,NOM_PRODUTO,DATA_CADASTRO,VALOR) 
-Values($Codigo,'$nome','$data_cadadastro',$Valor)";
+Values($Codigo,'$Nome','$Data_cadadastro',$Valor)";
 
 $result = $conn->query($sql);
 
